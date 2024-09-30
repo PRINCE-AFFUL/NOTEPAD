@@ -28,7 +28,7 @@ function deleteNote(event){
 
 
 
-
+// storng the user notes
 // Store user input
 const userInput = document.getElementById('floatingTextarea');
 
@@ -44,3 +44,57 @@ window.onload = function() {
     floatingTextarea.value = storedInput;
   }
 };
+
+// storng the user notes
+// Store user input
+const title = document.getElementById('title');
+
+// Store data on page unload
+window.onunload = function() {
+  localStorage.setItem('title',title .value);
+};
+
+// Retrieve stored data on page load
+window.onload = function() {
+  const storedInput = localStorage.getItem('title');
+  if (storedInput) {
+    title .value = storedInput;
+  }
+};
+
+
+
+//Refreshing page after user clicks on the new note button
+
+// Get the button element
+const refreshButton = document.getElementById('refresh-button');
+
+// Add event listener
+refreshButton.addEventListener('click', function() {
+  // Clear input fields
+  const inputs = document.querySelectorAll('input, textarea');
+  inputs.forEach(input => input.value = '');
+
+  // Refresh the page
+  window.location.reload();
+});
+
+
+jQuery
+
+$('#refresh-button').click(function() {
+  // Clear input fields
+  $('input, textarea').val('');
+
+  // Refresh the page
+  window.location.reload();
+});
+
+
+
+function clearFields() {
+    const inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(input => input.value = '');
+    window.location.reload();
+  }
+  

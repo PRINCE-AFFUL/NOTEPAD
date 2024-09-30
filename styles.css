@@ -87,3 +87,142 @@ textarea{
     border-radius: 15px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QERIES */
+  @media (max-width: 480px) {
+    /* styles for small mobile devices */
+    body{
+background-color: red;
+    }
+
+
+    }
+    
+  
+  
+  
+  /* - Medium (481px - 640px): */
+  
+  @media (min-width: 481px) and (max-width: 640px) {
+    /* styles for medium mobile devices */
+    body{
+ 
+    }
+
+
+  }
+  
+  
+  /* - Large (641px - 768px): */
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    /* styles for large mobile devices */
+    body{
+ background-color: blue;
+    }
+
+  
+  }
+  
+  
+  /* Tablets
+  
+  - Small (769px - 960px): */
+  
+  @media (min-width: 769px) and (max-width: 960px) {
+    /* styles for small tablets */
+    body{
+
+    }
+
+
+  }
+  
+  
+  /* - Medium (961px - 1024px): */
+  
+  @media (min-width: 961px) and (max-width: 1024px) {
+    /* styles for medium tablets */
+    body{
+
+    }
+
+  }
+  
+  
+  /* - Large (1025px - 1280px): */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* styles for large tablets */
+    body{
+     
+    }
+
+  }
+  
+  
+  /* Desktops */
+  
+  /* - Small (1281px - 1440px): */
+  
+   @media (min-width: 1281px) and (max-width: 1440px) {
+    /* styles for small desktops */
+    body{
+   
+    }
+  
+  }
+  
+  
+  /* - Medium (1441px - 1680px): */
+  
+  @media (min-width: 1441px) and (max-width: 1680px) {
+    /* styles for medium desktops */
+   
+  }
+  
+  
+  /* - Large (1681px - 1920px): */
+  
+  @media (min-width: 1681px) and (max-width: 1920px) {
+    /* styles for large desktops */
+    body{
+     
+    }
+  }
+  
+  
+  /* - Extra Large (1921px and up): */
+  
+  @media (min-width: 1921px) {
+    /* styles for extra large desktops */
+  }
+  
+  /* 
+  Other Devices
+  
+  - Wearables (240px - 320px): */
+  
+  @media (max-width: 320px) {
+    /* styles for wearables */
+  }
+  
+  
+  /* - Gaming Consoles (720px - 1080px): */
+  
+  @media (min-width: 720px) and (max-width: 1080px) {
+    /* styles for gaming consoles */
+  }
