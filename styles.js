@@ -1,5 +1,5 @@
 const noteList = document.getElementById('note-list');
-const addNoteButton = document.getElementById('add-task');
+const addNoteButton = document.getElementById('add-note');
 const newNoteInput = document.getElementById('floatingTextarea');
 
 //adding event listener for the add note button
@@ -22,5 +22,25 @@ function addNote(){
 
 //function to handle deleting of notes
 function deleteNote(event){
-    const 
+    const noteElement = event.target.parentNode;
+    noteList.removeChild(noteElement);
 }
+
+
+
+
+// Store user input
+const userInput = document.getElementById('floatingTextarea');
+
+// Store data on page unload
+window.onunload = function() {
+  localStorage.setItem('floatingTextarea',floatingTextarea .value);
+};
+
+// Retrieve stored data on page load
+window.onload = function() {
+  const storedInput = localStorage.getItem('floatingTextarea');
+  if (storedInput) {
+    floatingTextarea.value = storedInput;
+  }
+};

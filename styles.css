@@ -76,3 +76,14 @@ textarea{
     background-color: rgba(147, 230, 147, 0.455);
    
 }
+.butons{
+    display: flex;
+    gap: 2%;
+}
+.delete-button{
+    background-color: red;
+    font-size: 25px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
